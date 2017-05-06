@@ -5,11 +5,12 @@ import scala.concurrent.{Future, Promise}
 object OpenType {
   def load(url: String): Future[Font] = {
     val promise = Promise[Font]
-    TopLevel.load(url, (err, font) => {
+    TopLevel.load(url, (err: String, font: Font) => {
       Option(err) match {
         case Some(message) => promise.failure(new OpenTypeException(message))
         case None => promise.success(font)
       }
+      ()
     })
     promise.future
   }
