@@ -49,14 +49,14 @@ class Font extends js.Object {
 }
 
 @ScalaJSDefined
-trait PathOptions extends js.Any {
+trait PathOptions extends js.Object {
   var kerning: js.UndefOr[Boolean] = js.undefined
   var features: js.UndefOr[OpenTypeFeatureTags] = js.undefined
   var hinting: js.UndefOr[Boolean] = js.undefined
 }
 
 @ScalaJSDefined
-trait OpenTypeFeatureTags extends js.Any {
+trait OpenTypeFeatureTags extends js.Object {
   var liga: js.UndefOr[Boolean] = js.undefined
   var rlig: js.UndefOr[Boolean] = js.undefined
 }
