@@ -42,20 +42,18 @@ class Font extends js.Object {
                   fontSize: Double = js.native,
                   options: PathOptions = js.native): Path = js.native
   def stringToGlyphs(text: String): js.Array[Glyph] = js.native
-  def charToGlyph(char: Char): Glyph = js.native
+  def charToGlyph(char: String): Glyph = js.native
   def getKerningValue(leftGlyph: Glyph, rightGlyph: Glyph): Double = js.native
   def getAdvanceWidth(text: String, fontSize: Double = js.native, options: PathOptions = js.native): Double = js.native
   def download(): Unit = js.native
 }
 
-@ScalaJSDefined
 trait PathOptions extends js.Object {
   var kerning: js.UndefOr[Boolean] = js.undefined
   var features: js.UndefOr[OpenTypeFeatureTags] = js.undefined
   var hinting: js.UndefOr[Boolean] = js.undefined
 }
 
-@ScalaJSDefined
 trait OpenTypeFeatureTags extends js.Object {
   var liga: js.UndefOr[Boolean] = js.undefined
   var rlig: js.UndefOr[Boolean] = js.undefined
