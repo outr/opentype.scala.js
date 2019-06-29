@@ -1,6 +1,6 @@
 name := "opentype.scala.js"
 organization := "com.outr"
-version := "0.7.3_1-SNAPSHOT"
+version := "0.7.3_1"
 
 scalaVersion := "2.13.0"
 crossScalaVersions := List("2.13.0", "2.12.8", "2.11.12")
