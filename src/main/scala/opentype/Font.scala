@@ -3,7 +3,7 @@ package opentype
 import org.scalajs.dom.raw.CanvasRenderingContext2D
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSGlobal, JSName, ScalaJSDefined}
+import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
 @JSGlobal("opentype.Font")
